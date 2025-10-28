@@ -60,3 +60,32 @@
     border: .25vmin solid black;
     border-radius: 8px;
 }
+
+#controls {
+  display: none;
+  margin-top: 15px;
+}
+
+#controls button {
+  font-size: 24px;
+  background: #fff;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px;
+  box-shadow: 0px 0px 5px #000;
+}
+
+#controls .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show controls only on small screens */
+@media (max-width: 768px) {
+  #controls {
+    display: block;
+  }
+}
